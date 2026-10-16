@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandigarh Noor Salon at Home | Luxury At-Home Beauty & Care Concept</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for refined icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: {
+                            DEFAULT: '#FAF6F0',
+                            50: '#FFFFFF',
+                            100: '#FDFBF7',
+                            200: '#F5ECE1',
+                            300: '#EBDCD0'
+                        },
+                        rose: {
+                            DEFAULT: '#C89682',
+                            light: '#E2B8A7',
+                            dark: '#A6735E'
+                        },
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#DFBD78',
+                            dark: '#9E7E3B'
+                        },
+                        plum: {
+                            DEFAULT: '#2A101E',
+                            light: '#482136',
+                            deep: '#1A0912',
+                            card: '#361627'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF6F0;
+            color: #2A101E;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        /* Custom smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF6F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 4px;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #DFBD78 0%, #C5A059 50%, #9E7E3B 100%);
+        }
+        .plum-gradient {
+            background: linear-gradient(135deg, #361627 0%, #2A101E 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(42, 16, 30, 0.08);
+        }
+        .luxury-border {
+            border: 1px solid rgba(197, 160, 89, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-ivory text-plum antialiased selection:bg-gold/20 selection:text-plum pb-20 md:pb-0">
+
+    <!-- Concept Demo Banner (Mandatory Requirement) -->
+    <div class="bg-plum text-ivory text-xs md:text-sm py-2 px-4 text-center tracking-wider font-medium border-b border-gold/30 sticky top-0 z-50 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-sparkles text-gold animate-pulse"></i>
+        <span>Website Concept Demo — Details Awaiting Owner Confirmation</span>
+        <i class="fa-solid fa-sparkles text-gold animate-pulse"></i>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-[37px] md:top-[41px] z-40 bg-ivory/95 backdrop-blur-md border-b border-gold/20 transition-all duration-300" id="header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-3xl md:text-4xl font-bold tracking-widest text-plum">NOOR</span>
+                <span class="text-[9px] uppercase tracking-[0.25em] text-gold-dark font-semibold -mt-1">Salon at Home • Chandigarh</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#how-it-works" class="hover:text-gold transition-colors">How It Works</a>
+                <a href="#coverage" class="hover:text-gold transition-colors">Service Areas</a>
+                <a href="#portfolio" class="hover:text-gold transition-colors">Portfolio</a>
+                <a href="#about" class="hover:text-gold transition-colors">About Concept</a>
+                <a href="#faq" class="hover:text-gold transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="https://wa.me/919876543210?text=Hello%20Noor%20Salon%20at%20Home,%20I%20would%20like%20to%20enquire%20about%20at-home%20services%20in%20Chandigarh." target="_blank" class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-700 transition-colors shadow-md" title="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+                <a href="#enquire" class="px-6 py-2.5 rounded-full plum-gradient text-ivory text-sm font-semibold tracking-wider hover:opacity-95 transition-opacity shadow-lg flex items-center gap-2 border border-gold/40">
+                    <span>Enquire Now</span>
+                    <i class="fa-solid fa-arrow-right-long text-gold text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="lg:hidden text-plum p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-ivory border-b border-gold/20 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#services" class="block text-lg font-serif font-medium hover:text-gold transition-colors mobile-link">Services</a>
+            <a href="#how-it-works" class="block text-lg font-serif font-medium hover:text-gold transition-colors mobile-link">How It Works</a>
+            <a href="#coverage" class="block text-lg font-serif font-medium hover:text-gold transition-colors mobile-link">Service Areas</a>
+            <a href="#portfolio" class="block text-lg font-serif font-medium hover:text-gold transition-colors mobile-link">Portfolio</a>
+            <a href="#about" class="block text-lg font-serif font-medium hover:text-gold transition-colors mobile-link">About Concept</a>
+            <a href="#faq" class="block text-lg font-serif font-medium hover:text-gold transition-colors mobile-link">FAQ</a>
+            <div class="pt-4 flex items-center space-x-4">
+                <a href="#enquire" class="flex-1 text-center py-3 rounded-full plum-gradient text-ivory font-semibold tracking-wider mobile-link shadow-md">Enquire Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 bg-gradient-to-b from-ivory-200/50 to-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose/10 text-rose-dark text-xs sm:text-sm font-semibold tracking-wide border border-rose/20">
+                        <i class="fa-solid fa-home text-gold"></i>
+                        <span>Bespoke At-Home Beauty Experience in Chandigarh</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold font-serif tracking-tight text-plum leading-[1.1]">
+                        Beauty & Care, <br/><span class="italic font-normal text-rose-dark">With Comfort in Mind</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-plum/80 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Experience professional salon grooming and relaxation delivered directly to your private residence across Chandigarh, Mohali, and Panchkula. Designed for personalized attention and absolute tranquility.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#enquire" class="w-full sm:w-auto px-8 py-4 rounded-full plum-gradient text-ivory font-medium tracking-wide shadow-xl hover:shadow-2xl transition-all flex items-center justify-center gap-3 border border-gold/30">
+                            <span>Submit Appointment Enquiry</span>
+                            <i class="fa-solid fa-chevron-right text-gold text-xs"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-transparent text-plum font-medium tracking-wide border border-plum/30 hover:bg-plum/5 transition-all text-center">
+                            Explore Sample Categories
+                        </a>
+                    </div>
+                    <div class="pt-6 flex items-center justify-center lg:justify-start space-x-6 text-xs text-plum/70 font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-heart text-gold text-base"></i>
+                            <span>Hygienic Kit & Standards</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold text-base"></i>
+                            <span>Trained Professionals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Decorative background glow -->
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-gold/30 to-rose/30 rounded-[2.5rem] blur-2xl opacity-70"></div>
+                        <div class="relative rounded-3xl overflow-hidden card-shadow luxury-border bg-ivory-100 aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Luxury Salon at Home Experience" 
+                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                 onerror="this.src='https://placehold.co/600x750/3C152B/FAF6F0?text=Noor+Salon+At+Home';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-plum/80 via-transparent to-transparent flex flex-col justify-end p-6 text-ivory">
+                                <span class="text-xs uppercase tracking-widest text-gold-light font-semibold">Chandigarh Exclusive</span>
+                                <p class="font-serif text-2xl font-medium mt-1">Personalized At-Home Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice / Disclaimer Box -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 mb-12 relative z-20">
+        <div class="bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-gold/40 shadow-lg flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+            <div class="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-circle-info text-xl"></i>
+            </div>
+            <div class="flex-1 text-xs sm:text-sm text-plum/80">
+                <span class="font-bold text-plum">Service Confirmation Notice:</span> All treatments, service menus, pricing, and operating slots shown in this concept are editable samples pending owner confirmation. Submit an enquiry to connect directly for custom bookings.
+            </div>
+            <a href="#enquire" class="text-xs font-bold text-rose-dark uppercase tracking-wider hover:underline shrink-0">Enquire Now →</a>
+        </div>
+    </section>
+
+    <!-- Service Catalogue Section -->
+    <section id="services" class="py-20 bg-ivory-100 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold-dark font-bold">Service Catalogue</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-plum">Sample Categories & Treatments</h2>
+                <p class="text-plum/70 text-sm sm:text-base font-light">
+                    Browse our proposed sample categories. Every service is structured for utmost comfort and professionalism in your own space. <span class="italic text-rose-dark">(Pending Owner Confirmation)</span>
+                </p>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow luxury-border flex flex-col group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=600" 
+                             alt="Makeup & Styling" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/400x300/3C152B/FAF6F0?text=Makeup';">
+                        <div class="absolute inset-0 bg-plum/20"></div>
+                        <span class="absolute top-3 right-3 bg-ivory/90 text-plum text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Sample</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-plum mb-2">Makeup & Styling</h3>
+                            <p class="text-xs text-plum/70 leading-relaxed mb-4">
+                                Subtle daytime looks, festive glam, party makeup, and bridal styling consultations at your doorstep.
+                            </p>
+                        </div>
+                        <button onclick="openServiceModal('Makeup & Styling', 'Includes bridal makeup, party glam, subtle day looks, saree draping, and hair styling consultations. All products used are premium quality.')" 
+                                class="w-full py-2.5 rounded-xl bg-ivory-200 text-plum font-semibold text-xs tracking-wide hover:bg-gold hover:text-white transition-colors">
+                            View Details & Enquire
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow luxury-border flex flex-col group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" 
+                             alt="Hair Care & Styling" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/400x300/3C152B/FAF6F0?text=Hair+Care';">
+                        <div class="absolute inset-0 bg-plum/20"></div>
+                        <span class="absolute top-3 right-3 bg-ivory/90 text-plum text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Sample</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-plum mb-2">Hair Care & Styling</h3>
+                            <p class="text-xs text-plum/70 leading-relaxed mb-4">
+                                Nourishing hair spas, expert blow-drys, keratin rituals, and precision trims in your living space.
+                            </p>
+                        </div>
+                        <button onclick="openServiceModal('Hair Care & Styling', 'Includes nourishing hair spas, root touch-ups, blow-drys, deep conditioning treatments, and styling for special occasions.')" 
+                                class="w-full py-2.5 rounded-xl bg-ivory-200 text-plum font-semibold text-xs tracking-wide hover:bg-gold hover:text-white transition-colors">
+                            View Details & Enquire
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow luxury-border flex flex-col group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=600" 
+                             alt="Skincare Rituals" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/400x300/3C152B/FAF6F0?text=Skincare';">
+                        <div class="absolute inset-0 bg-plum/20"></div>
+                        <span class="absolute top-3 right-3 bg-ivory/90 text-plum text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Sample</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-plum mb-2">Skincare Rituals</h3>
+                            <p class="text-xs text-plum/70 leading-relaxed mb-4">
+                                Rejuvenating facials, cleanups, gold/diamond infusions, and hydrating skin treatments designed for glowing radiance.
+                            </p>
+                        </div>
+                        <button onclick="openServiceModal('Skincare Rituals', 'Includes classic cleanups, herbal facials, deep hydration glow rituals, and anti-aging care tailored for at-home relaxation.')" 
+                                class="w-full py-2.5 rounded-xl bg-ivory-200 text-plum font-semibold text-xs tracking-wide hover:bg-gold hover:text-white transition-colors">
+                            View Details & Enquire
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-shadow luxury-border flex flex-col group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=600" 
+                             alt="Beauty Treatments" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/400x300/3C152B/FAF6F0?text=Treatments';">
+                        <div class="absolute inset-0 bg-plum/20"></div>
+                        <span class="absolute top-3 right-3 bg-ivory/90 text-plum text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Sample</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-plum mb-2">Beauty Treatments</h3>
+                            <p class="text-xs text-plum/70 leading-relaxed mb-4">
+                                Essential grooming, manicures, pedicures, threading, and waxing services performed with premium hygienic kits.
+                            </p>
+                        </div>
+                        <button onclick="openServiceModal('Beauty Treatments', 'Includes manicures, pedicures, precise threading, waxing, and body polishing sessions delivered with utmost hygiene.')" 
+                                class="w-full py-2.5 rounded-xl bg-ivory-200 text-plum font-semibold text-xs tracking-wide hover:bg-gold hover:text-white transition-colors">
+                            View Details & Enquire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-plum text-ivory relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Seamless Experience</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-ivory">How It Works</h2>
+                <p class="text-ivory/70 text-sm sm:text-base font-light">
+                    Getting your favorite salon care at home in Chandigarh is simple, transparent, and hassle-free.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-plum-card p-8 rounded-3xl border border-gold/20 flex flex-col items-center text-center relative group hover:border-gold transition-colors">
+                    <div class="w-16 h-16 rounded-2xl gold-gradient text-plum font-serif font-bold text-2xl flex items-center justify-center mb-6 shadow-lg">
+                        01
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-ivory mb-3">Choose Your Service</h3>
+                    <p class="text-ivory/70 text-xs sm:text-sm leading-relaxed">
+                        Explore our service catalogue or specify your bespoke beauty and care requirement for your upcoming date or event.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-plum-card p-8 rounded-3xl border border-gold/20 flex flex-col items-center text-center relative group hover:border-gold transition-colors">
+                    <div class="w-16 h-16 rounded-2xl gold-gradient text-plum font-serif font-bold text-2xl flex items-center justify-center mb-6 shadow-lg">
+                        02
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-ivory mb-3">Submit Your Enquiry</h3>
+                    <p class="text-ivory/70 text-xs sm:text-sm leading-relaxed">
+                        Fill out our quick appointment enquiry form with your Chandigarh locality, preferred date, and specific requests.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-plum-card p-8 rounded-3xl border border-gold/20 flex flex-col items-center text-center relative group hover:border-gold transition-colors">
+                    <div class="w-16 h-16 rounded-2xl gold-gradient text-plum font-serif font-bold text-2xl flex items-center justify-center mb-6 shadow-lg">
+                        03
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-ivory mb-3">Confirm Availability</h3>
+                    <p class="text-ivory/70 text-xs sm:text-sm leading-relaxed">
+                        We will review your request and connect via phone or WhatsApp to finalize slot timings and appointment details.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#enquire" class="inline-flex items-center gap-2 px-8 py-4 rounded-full gold-gradient text-plum font-bold text-sm tracking-wider shadow-xl hover:opacity-95 transition-opacity">
+                    <span>Start Your Enquiry Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section id="coverage" class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold-dark font-bold">Coverage Details</span>
+                    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-plum">Serving Chandigarh & Tri-City Area</h2>
+                    <p class="text-plum/80 text-sm sm:text-base font-light leading-relaxed">
+                        We bring salon convenience directly to your residential address. Our service coverage spans across Chandigarh sectors, with sample extensions to neighboring Tri-City regions pending owner confirmation.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-white p-5 rounded-2xl border border-gold/20 shadow-sm flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-gold/15 text-gold-dark flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-plum text-sm">Chandigarh Sectors</h4>
+                                <p class="text-xs text-plum/70 mt-1">Covering Sector 1 to Sector 65 (Residential & Apartments).</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-gold/20 shadow-sm flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-gold/15 text-gold-dark flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-city"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-plum text-sm">Tri-City Extensions</h4>
+                                <p class="text-xs text-plum/70 mt-1">Mohali & Panchkula (Sample coverage areas for request).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 text-xs text-plum/60 italic">
+                        * Note: Specific travel radius or locality restrictions are subject to owner confirmation upon enquiry.
+                    </div>
+                </div>
+
+                <!-- Visual Coverage Card -->
+                <div class="bg-plum rounded-3xl p-8 text-ivory relative overflow-hidden shadow-xl border border-gold/30">
+                    <div class="absolute right-0 top-0 w-64 h-64 bg-gold/10 rounded-full blur-2xl"></div>
+                    <h3 class="font-serif text-3xl font-bold mb-4">Check Your Locality</h3>
+                    <p class="text-ivory/80 text-sm mb-6 font-light">
+                        Unsure if we serve your specific residential society or block in Chandigarh? Drop your locality name in our enquiry form.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 bg-plum-card p-3.5 rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-circle-check text-gold"></i>
+                            <span class="text-sm font-medium">Sector-wise Home Visit Scheduling</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-plum-card p-3.5 rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-circle-check text-gold"></i>
+                            <span class="text-sm font-medium">On-Time Professional Arrival</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-plum-card p-3.5 rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-circle-check text-gold"></i>
+                            <span class="text-sm font-medium">Zero Setup Mess guarantee</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#enquire" class="block text-center py-3.5 rounded-xl gold-gradient text-plum font-bold text-xs uppercase tracking-wider shadow-lg hover:opacity-95 transition-opacity">
+                            Enquire For Your Locality
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beauty Portfolio Gallery -->
+    <section id="portfolio" class="py-20 bg-ivory-100 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold-dark font-bold">Visual Gallery</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-plum">Beauty Portfolio Concept</h2>
+                <p class="text-plum/70 text-sm sm:text-base font-light">
+                    A glimpse into our luxurious aesthetic, refined styling standards, and care philosophy.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] card-shadow luxury-border bg-white cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=1000', 'Bridal & Party Styling')">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800" 
+                         alt="Bridal Styling" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                         onerror="this.src='https://placehold.co/600x450/3C152B/FAF6F0?text=Styling';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-plum/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-ivory">
+                        <span class="text-xs uppercase tracking-widest text-gold">Styling Concept</span>
+                        <p class="font-serif text-xl font-medium">Bridal & Party Elegance</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] card-shadow luxury-border bg-white cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=1000', 'Hair Care Rituals')">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=800" 
+                         alt="Hair Care" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                         onerror="this.src='https://placehold.co/600x450/3C152B/FAF6F0?text=Hair+Care';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-plum/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-ivory">
+                        <span class="text-xs uppercase tracking-widest text-gold">Hair Care</span>
+                        <p class="font-serif text-xl font-medium">Nourishing Hair Rituals</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] card-shadow luxury-border bg-white cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1519415387727-a1b42304c9e4?auto=format&fit=crop&q=80&w=1000', 'Skincare & Glow')">
+                    <img src="https://images.unsplash.com/photo-1519415387727-a1b42304c9e4?auto=format&fit=crop&q=80&w=800" 
+                         alt="Skincare" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                         onerror="this.src='https://placehold.co/600x450/3C152B/FAF6F0?text=Skincare';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-plum/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-ivory">
+                        <span class="text-xs uppercase tracking-widest text-gold">Skincare</span>
+                        <p class="font-serif text-xl font-medium">Radiant Glow Treatments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 card-shadow luxury-border grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&q=80&w=800" 
+                             alt="About Noor Salon at Home" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/500x625/3C152B/FAF6F0?text=About+Noor';">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold-dark font-bold">About Our Concept</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-plum">Personalised Attention, Unmatched Comfort</h2>
+                    <p class="text-plum/80 text-sm sm:text-base font-light leading-relaxed">
+                        Chandigarh Noor Salon at Home is envisioned as a boutique at-home beauty experience designed entirely around your convenience. We believe professional grooming and relaxation should not require navigating traffic or waiting in salons.
+                    </p>
+                    <p class="text-plum/80 text-sm sm:text-base font-light leading-relaxed">
+                        By bringing expert care directly into your private residence, we ensure 100% personalized attention. <em class="text-rose-dark not-italic font-medium">Note: We maintain strict transparency and do not invent owner qualifications, business histories, or unverified certifications without direct confirmation.</em>
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-plum">Customer-First Enquiry Model</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-plum">Calm At-Home Atmosphere</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-plum">Hygienic & Professional Kits</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-plum">Chandigarh Local Expertise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Enquiry Form & WhatsApp Integration -->
+    <section id="enquire" class="py-20 bg-ivory-100 border-t border-gold/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 card-shadow luxury-border">
+                <div class="text-center max-w-2xl mx-auto mb-10 space-y-3">
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold-dark font-bold">Appointment Enquiry</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-plum">Book Your At-Home Consultation</h2>
+                    <p class="text-plum/70 text-xs sm:text-sm font-light">
+                        Submit your details below to enquire about availability and services in Chandigarh. We will connect with you shortly.
+                    </p>
+                </div>
+
+                <!-- Success Alert (Hidden by default) -->
+                <div id="success-message" class="hidden mb-8 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-center space-y-2">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold">Enquiry Submitted Successfully!</h3>
+                    <p class="text-xs sm:text-sm text-emerald-700">
+                        Thank you for reaching out to Chandigarh Noor Salon at Home. You can also send this directly via WhatsApp for instant response.
+                    </p>
+                    <div class="pt-2">
+                        <a id="whatsapp-redirect-btn" href="#" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-600 text-white text-xs font-semibold tracking-wider hover:bg-emerald-700 transition-colors shadow-md">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Send via WhatsApp Now</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Enquiry Form -->
+                <form id="enquiry-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">Your Name *</label>
+                            <input type="text" id="form-name" required placeholder="e.g. Simran Kaur" 
+                                   class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/30 text-plum placeholder-plum/40 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">Phone Number *</label>
+                            <input type="tel" id="form-phone" required placeholder="e.g. +91 98765 43210" 
+                                   class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/30 text-plum placeholder-plum/40 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Service Selection -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">Select Service Category *</label>
+                            <select id="form-service" required class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/30 text-plum text-sm focus:outline-none focus:border-gold transition-colors">
+                                <option value="" disabled selected>Choose a sample service...</option>
+                                <option value="Makeup & Styling">Makeup & Styling</option>
+                                <option value="Hair Care & Styling">Hair Care & Styling</option>
+                                <option value="Skincare Rituals">Skincare Rituals</option>
+                                <option value="Beauty Treatments">Beauty Treatments</option>
+                                <option value="Other Custom Enquiry">Other Custom Enquiry</option>
+                            </select>
+                        </div>
+
+                        <!-- Preferred Date -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">Preferred Date *</label>
+                            <input type="date" id="form-date" required 
+                                   class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/30 text-plum text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Chandigarh Locality -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">Chandigarh Locality / Sector *</label>
+                            <input type="text" id="form-locality" required placeholder="e.g. Sector 35C, Chandigarh" 
+                                   class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/30 text-plum placeholder-plum/40 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+
+                        <!-- Notes / Special Requests -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-plum mb-2">Notes or Special Requests</label>
+                            <input type="text" id="form-notes" placeholder="e.g. Morning slot preferred" 
+                                   class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/30 text-plum placeholder-plum/40 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+                        <button type="submit" class="w-full sm:flex-1 py-4 rounded-xl plum-gradient text-ivory font-bold text-xs uppercase tracking-widest shadow-xl hover:opacity-95 transition-opacity flex items-center justify-center gap-2 border border-gold/30">
+                            <span>Submit Appointment Enquiry</span>
+                            <i class="fa-solid fa-paper-plane text-gold"></i>
+                        </button>
+                        <a href="https://wa.me/919876543210?text=Hello%20Noor%20Salon%20at%20Home,%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-emerald-600 text-white font-bold text-xs uppercase tracking-widest hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <p class="text-[11px] text-center text-plum/60 pt-2">
+                        * Note: Submission initiates an enquiry request. Our team will verify slot availability and confirm all details with you directly.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-ivory">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold-dark font-bold">FAQ & Policies</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-plum">Frequently Asked Questions</h2>
+                <p class="text-plum/70 text-sm sm:text-base font-light">
+                    Everything you need to know about booking our at-home services in Chandigarh. <span class="italic text-rose-dark">(Policies marked for owner approval)</span>
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl border border-gold/30 overflow-hidden card-shadow">
+                    <button class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-plum flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>How do I request an at-home appointment?</span>
+                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-xs sm:text-sm text-plum/70 font-light leading-relaxed hidden">
+                        You can fill out our quick appointment enquiry form on this website or click the WhatsApp contact button. Our team will review your preferred date, service, and Chandigarh locality, then connect with you to confirm the slot.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl border border-gold/30 overflow-hidden card-shadow">
+                    <button class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-plum flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>What areas do you serve in and around Chandigarh?</span>
+                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-xs sm:text-sm text-plum/70 font-light leading-relaxed hidden">
+                        Our primary service area is Chandigarh (sectors 1 to 65). We also have sample coverage for Mohali and Panchkula pending final confirmation by the business owner.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl border border-gold/30 overflow-hidden card-shadow">
+                    <button class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-plum flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>What is the appointment cancellation or rescheduling policy? <span class="text-[10px] uppercase bg-rose/10 text-rose-dark px-2 py-0.5 rounded ml-2 font-sans font-semibold">Owner Approval</span></span>
+                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-xs sm:text-sm text-plum/70 font-light leading-relaxed hidden">
+                        We understand plans can change. You can request rescheduling or cancellation up to 4 hours prior to your scheduled appointment time without any hassle. (Final cancellation policy pending owner confirmation).
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl border border-gold/30 overflow-hidden card-shadow">
+                    <button class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-plum flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Do I need to arrange anything special at home for the service?</span>
+                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-xs sm:text-sm text-plum/70 font-light leading-relaxed hidden">
+                        Not at all! Our professionals bring all necessary equipment, sanitized kits, and products. We ensure a tidy setup and complete cleanup before leaving.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-plum text-ivory border-t border-gold/30 pt-16 pb-24 md:pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Brand Col -->
+                <div class="space-y-4">
+                    <span class="font-serif text-3xl font-bold tracking-widest text-ivory block">NOOR</span>
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold block -mt-3">Salon at Home • Chandigarh</span>
+                    <p class="text-ivory/70 text-xs leading-relaxed font-light">
+                        A convenient beauty-service concept designed around customer enquiries and potential at-home appointments in Chandigarh, India.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-gold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-ivory/80">
+                        <li><a href="#services" class="hover:text-gold transition-colors">Service Catalogue</a></li>
+                        <li><a href="#how-it-works" class="hover:text-gold transition-colors">How It Works</a></li>
+                        <li><a href="#coverage" class="hover:text-gold transition-colors">Service Areas</a></li>
+                        <li><a href="#portfolio" class="hover:text-gold transition-colors">Visual Portfolio</a></li>
+                        <li><a href="#enquire" class="hover:text-gold transition-colors">Appointment Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Editable Contact Info -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-gold mb-4">Contact Details (Editable)</h4>
+                    <ul class="space-y-3 text-xs text-ivory/80">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-gold mt-0.5"></i>
+                            <span>Chandigarh, India (Sector-wise At-Home Visits)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-gold"></i>
+                            <span>+91 98765 43210 <span class="text-[10px] text-gold">(Placeholder)</span></span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-gold"></i>
+                            <span>enquiries@noorsalonathome.com <span class="text-[10px] text-gold">(Placeholder)</span></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-gold mb-4">Social & Connect</h4>
+                    <p class="text-xs text-ivory/70 mb-4 font-light">Connect with our concept page on social channels.</p>
+                    <div class="flex items-center space-x-3">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-plum-card border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-plum transition-all" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-plum-card border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-plum transition-all" title="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" target="_blank" class="w-10 h-10 rounded-full bg-plum-card border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-plum transition-all" title="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Disclaimer & Copyright -->
+            <div class="pt-8 border-t border-gold/20 flex flex-col sm:flex-row items-center justify-between text-xs text-ivory/60 gap-4 text-center sm:text-left">
+                <p>&copy; 2026 Chandigarh Noor Salon at Home. Concept Demonstration.</p>
+                <p class="text-gold font-medium">Website Concept Demo — Details Awaiting Owner Confirmation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-plum/95 backdrop-blur-md border-t border-gold/30 p-3 grid grid-cols-3 gap-2 shadow-2xl">
+        <a href="tel:+919876543210" class="flex flex-col items-center justify-center py-2 rounded-xl bg-plum-card text-ivory text-[11px] font-semibold border border-gold/20">
+            <i class="fa-solid fa-phone text-gold text-sm mb-1"></i>
+            <span>Call Us</span>
+        </a>
+        <a href="https://wa.me/919876543210?text=Hello%20Noor%20Salon%20at%20Home,%20I%20would%20like%20to%20enquire%20about%20services." target="_blank" class="flex flex-col items-center justify-center py-2 rounded-xl bg-emerald-600 text-white text-[11px] font-semibold">
+            <i class="fa-brands fa-whatsapp text-sm mb-1"></i>
+            <span>WhatsApp</span>
+        </a>
+        <a href="#enquire" class="flex flex-col items-center justify-center py-2 rounded-xl gold-gradient text-plum text-[11px] font-bold shadow-md">
+            <i class="fa-solid fa-calendar-check text-sm mb-1"></i>
+            <span>Enquire</span>
+        </a>
+    </div>
+
+    <!-- Service Details Modal -->
+    <div id="service-modal" class="fixed inset-0 z-50 bg-plum/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 card-shadow luxury-border relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeServiceModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-ivory-200 text-plum flex items-center justify-center hover:bg-gold hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold-dark bg-gold/10 px-2.5 py-1 rounded-full">Sample Category Details</span>
+            <h3 id="modal-title" class="font-serif text-3xl font-bold text-plum mt-3 mb-2">Service Title</h3>
+            <p id="modal-desc" class="text-xs sm:text-sm text-plum/70 font-light leading-relaxed mb-6">
+                Service details description here.
+            </p>
+            <div class="bg-ivory p-4 rounded-2xl border border-gold/20 mb-6 text-xs text-plum/80">
+                <span class="font-bold text-plum">Note:</span> All treatments and pricing are pending owner confirmation. Feel free to enquire for bespoke requirements.
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#enquire" onclick="closeServiceModal()" class="flex-1 py-3.5 rounded-xl plum-gradient text-ivory text-center font-bold text-xs uppercase tracking-wider shadow-lg">
+                    Proceed To Enquiry
+                </a>
+                <button onclick="closeServiceModal()" class="px-5 py-3.5 rounded-xl bg-ivory-200 text-plum font-bold text-xs">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-plum/90 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeLightbox()" class="absolute -top-12 right-0 w-10 h-10 rounded-full bg-ivory/20 text-ivory flex items-center justify-center hover:bg-gold hover:text-plum transition-colors text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="Portfolio preview" class="max-h-[75vh] max-w-full rounded-2xl object-contain shadow-2xl border border-gold/30">
+            <p id="lightbox-caption" class="text-ivory font-serif text-2xl mt-4 text-center tracking-wide"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Service Modal Functions
+        function openServiceModal(title, description) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = description;
+            const modal = document.getElementById('service-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeServiceModal() {
+            const modal = document.getElementById('service-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Lightbox Functions
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').innerText = caption;
+            const lightbox = document.getElementById('lightbox-modal');
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox-modal');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('fa-solid, .fa-chevron-down');
+            
+            content.classList.toggle('hidden');
+            button.parentElement.classList.toggle('border-gold');
+        }
+
+        // Enquiry Form Submission & WhatsApp integration
+        const enquiryForm = document.getElementById('enquiry-form');
+        const successMessage = document.getElementById('success-message');
+        const whatsappRedirectBtn = document.getElementById('whatsapp-redirect-btn');
+
+        enquiryForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const service = document.getElementById('form-service').value;
+            const date = document.getElementById('form-date').value;
+            const locality = document.getElementById('form-locality').value;
+            const notes = document.getElementById('form-notes').value;
+
+            // Construct WhatsApp pre-filled message
+            const waMessage = `Hello Noor Salon at Home,%0A*New Appointment Enquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Preferred Date:* ${encodeURIComponent(date)}%0A*Locality:* ${encodeURIComponent(locality)}%0A*Notes:* ${encodeURIComponent(notes)}`;
+            
+            const waUrl = `https://wa.me/919876543210?text=${waMessage}`;
+            whatsappRedirectBtn.href = waUrl;
+
+            // Show success state
+            enquiryForm.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+            successMessage.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
